@@ -1,0 +1,194 @@
+﻿<Window x:Class="GetDeviceInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GetDeviceInfo"
+        xmlns:e="http://schemas.microsoft.com/xaml/behaviors"
+     
+        mc:Ignorable="d"
+        Title="SBE Login Application" Height="500" Width="900">
+    <Window.Resources>
+        <local:Command x:Key="Command"></local:Command>
+    </Window.Resources>
+    <Window.DataContext>
+        <local:MainViewModel></local:MainViewModel>
+    </Window.DataContext>
+
+    <e:Interaction.Behaviors>
+        <local:DeviceChangeBehavior  Command="{StaticResource Command}"></local:DeviceChangeBehavior>
+    </e:Interaction.Behaviors>
+
+    <Border Padding="10" Background="#FFAEB3E8">
+        <!-- Grid For 3 Port panels -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <!-- Port 1 -->
+            <StackPanel Grid.Column="0" Margin="0 0 10 0">
+                
+                <Border BorderBrush="Black" BorderThickness="1">
+
+                    <StackPanel Background="#FFF0EBEB">
+                        <!-- Port Number -->
+                        <TextBlock 
+                            Text="Port 1" 
+                            FontWeight="Bold"
+                            TextAlignment="Center"
+                            FontSize="24"
+                            FontFamily="Century Gothic"/>
+
+                        <!-- Header Port 1 -->
+                        <TextBlock 
+                            Name="Header_port1"
+                            Text="Connect Device"
+                            Padding="10"
+                            FontSize="16" />                     
+                        
+
+
+                    </StackPanel>                   
+
+                </Border>  
+
+            </StackPanel>
+
+            <!-- Port 2 -->
+            <StackPanel Grid.Column="1" Margin="0 0 0 0">
+
+                <Border BorderBrush="Black" BorderThickness="1">
+
+                    <StackPanel  Background="#FFF0EBEB">
+                        <!-- Port Number -->
+                        <TextBlock 
+                            Text="Port 2" 
+                            FontWeight="Bold"
+                            TextAlignment="Center"
+                            FontSize="24"
+                            FontFamily="Century Gothic"/>
+
+                        <!-- Header Port 1 -->
+                        <TextBlock 
+                            Name="Header_port2"
+                            Text="Connect Device"
+                            Padding="10"
+                            FontSize="16" />
+
+                            
+
+                    </StackPanel>
+
+                </Border>
+
+            </StackPanel>
+
+            <!-- Port 3 -->
+            <StackPanel Grid.Column="2" Margin="10 0 0 0">
+
+                <Border BorderBrush="Black" BorderThickness="1">
+
+                    <StackPanel  Background="#FFF0EBEB">
+                        <!-- Port Number -->
+                        <TextBlock 
+                            Text="Port 3" 
+                            FontWeight="Bold"
+                            TextAlignment="Center"
+                            FontSize="24"
+                            FontFamily="Century Gothic"/>
+
+                        <!-- Header Port 1 -->
+                        <TextBlock 
+                            Name="Header_port3"
+                            Text="Connect Device"
+                            Padding="10"
+                            FontSize="16" />
+
+
+
+                    </StackPanel>
+
+                </Border>
+
+            </StackPanel>
+
+        </Grid>        
+        
+    </Border>
+    
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Connect Device"
+                   FontSize="24" Grid.ColumnSpan="3"
+                   Margin="0, 0, 0, 20" x:Name="Header"/>
+        
+        <TextBlock Grid.Column="1" Grid.Row="2" FontWeight="SemiBold" 
+                   Text="Manufacturer" FontFamily="Segoe UI" Margin="0, 0, 0, 10"></TextBlock>
+        <TextBox x:Name="oemTextBox" Grid.Column="2" Grid.Row="2" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+        
+        <TextBlock Grid.Column="1" Grid.Row="3" FontWeight="SemiBold" 
+                   Text="IMEI" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
+        <TextBox x:Name="imeiTextBox" Grid.Column="2" Grid.Row="3" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+        
+        <TextBlock Grid.Column="1" Grid.Row="4" FontWeight="SemiBold" 
+                   Text="Model" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
+        <TextBox x:Name="modelTextBox" Grid.Column="2" Grid.Row="4" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="5" FontWeight="SemiBold" 
+                   Text="Serial Number" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
+        <TextBox x:Name="serialNumberTextBox" Grid.Column="2" Grid.Row="5" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="6" FontWeight="SemiBold" 
+                   Text="Software Version" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
+        <TextBox x:Name="softwareVersionTextBox" Grid.Column="2" Grid.Row="6" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="7" FontWeight="SemiBold" 
+                   Text="Capacity" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
+        <TextBox x:Name="capacityTextBox" Grid.Column="2" Grid.Row="7" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="8" FontWeight="SemiBold" 
+                   Text="Color" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
+        <TextBox x:Name="colorTextBox" Grid.Column="2" Grid.Row="8" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="9" FontWeight="SemiBold" 
+                   Text="Status" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
+        <TextBox x:Name="statusTextBox" Grid.Column="2" Grid.Row="9" 
+                 Width="150" Margin="10, 0, 0, 10"/>
+
+    </Grid>-->
+
+
+
+</Window>
