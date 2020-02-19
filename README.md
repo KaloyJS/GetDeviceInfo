@@ -1,4 +1,3 @@
-# UsbDetectorWpf
+# GetDeviceInfo
 
-uses behavior with command binding to show messagebox on usb removed/added 
-![alt text](https://github.com/dtwk1/UsbDetectorWpf/blob/master/snapshot.png)
+C# WPF application that detects If a mobile phone has been connected through USB, It then gathers information from device such as IMEI, Model, Serial Number, Software Version
