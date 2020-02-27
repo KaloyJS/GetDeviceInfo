@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GetDeviceInfo.Enum;
+using GetDeviceInfo;
 
-namespace GetDeviceInfo.EventArgs
+namespace GetDeviceInfo
 {
 
     public class DeviceChangeEventArgs : System.EventArgs

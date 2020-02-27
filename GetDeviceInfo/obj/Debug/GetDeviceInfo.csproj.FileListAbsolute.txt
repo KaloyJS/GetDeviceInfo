@@ -73,3 +73,10 @@ C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\obj\Debug\GetDeviceInfo
 C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\obj\Debug\GetDeviceInfo.csproj.CopyComplete
 C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\obj\Debug\GetDeviceInfo.exe
 C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\obj\Debug\GetDeviceInfo.pdb
+C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\bin\Debug\LibUsbDotNet.LibUsbDotNet.dll
+C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\bin\Debug\LibUsbDotNet.LibUsbDotNet.pdb
+C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\bin\Debug\USBClassLibrary.dll
+C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\bin\Debug\USBClassLibrary.pdb
+C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\bin\Debug\iMobileDevice-net.dll
+C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\bin\Debug\iMobileDevice-net.pdb
+C:\Users\cnayve\source\repos\GetDeviceInfo\GetDeviceInfo\bin\Debug\iMobileDevice-net.xml

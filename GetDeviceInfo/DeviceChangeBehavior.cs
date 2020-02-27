@@ -8,8 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
-using GetDeviceInfo.Enum;
-using GetDeviceInfo.EventArgs;
+using GetDeviceInfo;
 using Microsoft.Xaml.Behaviors;
 
 namespace GetDeviceInfo

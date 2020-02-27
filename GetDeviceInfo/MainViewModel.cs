@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using GetDeviceInfo.EventArgs;
+using GetDeviceInfo;
 using Microsoft.Xaml.Behaviors.Core;
 
 namespace GetDeviceInfo

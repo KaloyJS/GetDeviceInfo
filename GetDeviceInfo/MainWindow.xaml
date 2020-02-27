@@ -7,7 +7,7 @@
         xmlns:e="http://schemas.microsoft.com/xaml/behaviors"
      
         mc:Ignorable="d"
-        Title="SBE Login Application" Height="500" Width="900">
+        Title="SBE Login Application" Height="600" Width="870">
     <Window.Resources>
         <local:Command x:Key="Command"></local:Command>
     </Window.Resources>
@@ -23,14 +23,15 @@
         <!-- Grid For 3 Port panels -->
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="281*" />
+                <ColumnDefinition Width="38*" />
+                <ColumnDefinition Width="243*"/>
+                <ColumnDefinition Width="280*" />
             </Grid.ColumnDefinitions>
-            
+
             <!-- Port 1 -->
             <StackPanel Grid.Column="0" Margin="0 0 10 0">
-                
+
                 <Border BorderBrush="Black" BorderThickness="1">
 
                     <StackPanel Background="#FFF0EBEB">
@@ -44,21 +45,60 @@
 
                         <!-- Header Port 1 -->
                         <TextBlock 
-                            Name="Header_port1"
+                            x:Name="Header_1"
                             Text="Connect Device"
-                            Padding="10"
-                            FontSize="16" />                     
-                        
+                            Padding="0 10"
+                            FontSize="16" 
+                            
+                            FontFamily="Century Gothic"/>
 
+                        <!-- UDID Port 1 -->
+                        <TextBlock Text="UDID:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="UdidTextBox_1" Margin="5 5" />
 
-                    </StackPanel>                   
+                        <!-- Manufacturer Port 1 -->
+                        <TextBlock Text="Manufacturer:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="OemTextBox_1" Margin="5 5" />
 
-                </Border>  
+                        <!-- IMEI Port 1 -->
+                        <TextBlock Text="IMEI:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ImeiTextBox_1" Margin="5 5" />
+
+                        <!-- Model Port 1 -->
+                        <TextBlock Text="Model:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ModelTextBox_1" Margin="5 5" />
+
+                        <!-- Serial Number Port 1 -->
+                        <TextBlock Text="Serial Number:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="SerialNumberTextBox_1" Margin="5 5" />
+
+                        <!-- Software Version Port 1 -->
+                        <TextBlock Text="Software Version:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="SoftwareVersionTextBox_1" Margin="5 5" />
+
+                        <!-- Capacity Port 1 -->
+                        <TextBlock Text="Capacity:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="CapacityTextBox_1" Margin="5 5" />
+
+                        <!-- Color Port 1 -->
+                        <TextBlock Text="Color:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ColorTextBox_1" Margin="5 5" />
+
+                        <!-- CodePro Port 1 -->
+                        <TextBlock Text="CodePro" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="CodeProTextBox_1" Margin="5 5" />
+
+                        <!-- Status Port 1 -->
+                        <TextBlock Text="Status:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="StatusTextBox_1" Margin="5 5 5 20" />
+                    </StackPanel>
+
+                </Border>
 
             </StackPanel>
 
             <!-- Port 2 -->
-            <StackPanel Grid.Column="1" Margin="0 0 0 0">
+            <StackPanel Grid.Column="1" Margin="0 0 0 0" Grid.ColumnSpan="2">
 
                 <Border BorderBrush="Black" BorderThickness="1">
 
@@ -71,14 +111,53 @@
                             FontSize="24"
                             FontFamily="Century Gothic"/>
 
-                        <!-- Header Port 1 -->
+                        <!-- Header Port 2 -->
                         <TextBlock 
-                            Name="Header_port2"
+                            x:Name="Header_2"
                             Text="Connect Device"
-                            Padding="10"
-                            FontSize="16" />
+                            Padding="0 10"
+                            FontSize="16"                             
+                            FontFamily="Century Gothic"/>
 
-                            
+                        <!-- UDID Port 2 -->
+                        <TextBlock Text="UDID:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="UdidTextBox_2" Margin="5 5" />
+
+                        <!-- Manufacturer Port 2 -->
+                        <TextBlock Text="Manufacturer:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="OemTextBox_2" Margin="5 5" />
+
+                        <!-- IMEI Port 2 -->
+                        <TextBlock Text="IMEI:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ImeiTextBox_2" Margin="5 5" />
+
+                        <!-- Model Port 2 -->
+                        <TextBlock Text="Model:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ModelTextBox_2" Margin="5 5" />
+
+                        <!-- Serial Number Port 2 -->
+                        <TextBlock Text="Serial Number:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="SerialNumberTextBox_2" Margin="5 5" />
+
+                        <!-- Software Version Port 2 -->
+                        <TextBlock Text="Software Version:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="SoftwareVersionTextBox_2" Margin="5 5" />
+
+                        <!-- Capacity Port 2 -->
+                        <TextBlock Text="Capacity:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="CapacityTextBox_2" Margin="5 5" />
+
+                        <!-- Color Port 2 -->
+                        <TextBlock Text="Color:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ColorTextBox_2" Margin="5 5" />
+
+                        <!-- CodePro Port 2 -->
+                        <TextBlock Text="CodePro" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="CodeProTextBox_2" Margin="5 5" />
+
+                        <!-- Status Port 2 -->
+                        <TextBlock Text="Status:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="StatusTextBox_2" Margin="5 5 5 20" />
 
                     </StackPanel>
 
@@ -87,7 +166,7 @@
             </StackPanel>
 
             <!-- Port 3 -->
-            <StackPanel Grid.Column="2" Margin="10 0 0 0">
+            <StackPanel Grid.Column="3" Margin="10 0 0 0">
 
                 <Border BorderBrush="Black" BorderThickness="1">
 
@@ -100,13 +179,53 @@
                             FontSize="24"
                             FontFamily="Century Gothic"/>
 
-                        <!-- Header Port 1 -->
+                        <!-- Header Port 3 -->
                         <TextBlock 
-                            Name="Header_port3"
+                            x:Name="Header_3"
                             Text="Connect Device"
-                            Padding="10"
-                            FontSize="16" />
+                            Padding="0 10"
+                            FontSize="16"                             
+                            FontFamily="Century Gothic"/>
 
+                        <!-- UDID Port 3 -->
+                        <TextBlock Text="UDID:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="UdidTextBox_3" Margin="5 5" />
+
+                        <!-- Manufacturer Port 3 -->
+                        <TextBlock Text="Manufacturer:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="OemTextBox_3" Margin="5 5" />
+
+                        <!-- IMEI Port 3 -->
+                        <TextBlock Text="IMEI:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ImeiTextBox_3" Margin="5 5" />
+
+                        <!-- Model Port 3 -->
+                        <TextBlock Text="Model:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ModelTextBox_3" Margin="5 5" />
+
+                        <!-- Serial Number Port 3 -->
+                        <TextBlock Text="Serial Number:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="SerialNumberTextBox_3" Margin="5 5" />
+
+                        <!-- Software Version Port 3 -->
+                        <TextBlock Text="Software Version:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="SoftwareVersionTextBox_3" Margin="5 5" />
+
+                        <!-- Capacity Port 3 -->
+                        <TextBlock Text="Capacity:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="CapacityTextBox_3" Margin="5 5" />
+
+                        <!-- Color Port 3 -->
+                        <TextBlock Text="Color:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="ColorTextBox_3" Margin="5 5" />
+
+                        <!-- CodePro Port 3 -->
+                        <TextBlock Text="CodePro" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="CodeProTextBox_3" Margin="5 5" />
+
+                        <!-- Status Port 3 -->
+                        <TextBlock Text="Status:" FontFamily="Segoe UI" Margin="5 0"/>
+                        <TextBox x:Name="StatusTextBox_3" Margin="5 5 5 20" />
 
 
                     </StackPanel>
@@ -115,79 +234,11 @@
 
             </StackPanel>
 
-        </Grid>        
-        
+        </Grid>
+
     </Border>
-    
-    <!--<Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20" />
-            <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="20" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="20" />
-        </Grid.RowDefinitions>
 
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="Connect Device"
-                   FontSize="24" Grid.ColumnSpan="3"
-                   Margin="0, 0, 0, 20" x:Name="Header"/>
-        
-        <TextBlock Grid.Column="1" Grid.Row="2" FontWeight="SemiBold" 
-                   Text="Manufacturer" FontFamily="Segoe UI" Margin="0, 0, 0, 10"></TextBlock>
-        <TextBox x:Name="oemTextBox" Grid.Column="2" Grid.Row="2" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-        
-        <TextBlock Grid.Column="1" Grid.Row="3" FontWeight="SemiBold" 
-                   Text="IMEI" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
-        <TextBox x:Name="imeiTextBox" Grid.Column="2" Grid.Row="3" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-        
-        <TextBlock Grid.Column="1" Grid.Row="4" FontWeight="SemiBold" 
-                   Text="Model" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
-        <TextBox x:Name="modelTextBox" Grid.Column="2" Grid.Row="4" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-
-        <TextBlock Grid.Column="1" Grid.Row="5" FontWeight="SemiBold" 
-                   Text="Serial Number" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
-        <TextBox x:Name="serialNumberTextBox" Grid.Column="2" Grid.Row="5" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-
-        <TextBlock Grid.Column="1" Grid.Row="6" FontWeight="SemiBold" 
-                   Text="Software Version" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
-        <TextBox x:Name="softwareVersionTextBox" Grid.Column="2" Grid.Row="6" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-
-        <TextBlock Grid.Column="1" Grid.Row="7" FontWeight="SemiBold" 
-                   Text="Capacity" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
-        <TextBox x:Name="capacityTextBox" Grid.Column="2" Grid.Row="7" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-
-        <TextBlock Grid.Column="1" Grid.Row="8" FontWeight="SemiBold" 
-                   Text="Color" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
-        <TextBox x:Name="colorTextBox" Grid.Column="2" Grid.Row="8" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-
-        <TextBlock Grid.Column="1" Grid.Row="9" FontWeight="SemiBold" 
-                   Text="Status" FontFamily="Segoe UI" Margin="0, 0, 0, 10" />
-        <TextBox x:Name="statusTextBox" Grid.Column="2" Grid.Row="9" 
-                 Width="150" Margin="10, 0, 0, 10"/>
-
-    </Grid>-->
+   
 
 
 
